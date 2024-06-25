@@ -1,0 +1,215 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.head {
+    background-image:url(images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:87%;
+}
+
+.content{
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    color: white;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+button{
+    background:transparent;
+    border:1px solid white;
+    border-radius:25px;
+    padding:10px 20px;
+    color: white;
+}
+
+.sidebar{
+    width:50px;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    right: 0;
+    top:0;
+    position: absolute;
+    height:100vh;
+}
+
+.sidebar img{
+    width: 25px;
+    cursor: pointer;
+    
+}
+
+.useful-link
+{
+    position: absolute;
+    bottom:30px;
+    width: 50px;
+    text-align: center;
+}
+
+.social-link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.menu
+{
+    top:25px;
+    position: absolute;
+    padding: 10px;
+  
+}
+
+.bubbles img{
+    width: 50px;
+    animation: sample 8s linear infinite;
+}
+
+.bubbles {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width:100%;    
+}
+
+@keyframes sample 
+{
+
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1.0s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(3)
+{
+    animation-delay: 1.5s;
+    width: 35px;
+}
+
+.bubbles img:nth-child(4)
+{
+    animation-delay: 2s;
+    width: 40px;
+}
+
+.bubbles img:nth-child(5)
+{
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 4s;
+    width: 20px;
+}
+.bubbles img:nth-child(7)
+{
+    animation-delay: 5s;
+    width: 20px;
+}
+.bubbles img:nth-child(8)
+{
+    animation-delay: 6s;
+    width: 20px;
+}
+
+/* potrait */
+@media screen and (max-width:450px)
+{
+    .head{
+        background-image: url(https://wallpapercave.com/wp/wp868040.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        width: 100%;
+    } 
+    .sign{
+       
+    border: 1px solid white;
+    padding:5px;
+     border-radius: 5px;
+    cursor: pointer;
+    color:chartreuse
+    }
+    .sidebar
+{
+    height:50px;
+    background: linear-gradient(84deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    bottom: 0;
+    top:auto;
+    width: 100%;
+}
+.sidebar .menu
+{
+    position: absolute;
+    top:15px;
+    left: 15px;
+}
+.useful-link
+{
+    
+    position: absolute;
+    right: 5px;
+    top:10px
+}
+.social-link
+{
+    position: absolute;
+    margin-left: 140px;
+
+}
+.sidebar img{
+    width: 25px;
+    padding-left: 10px;
+}
+}
+/* tablet */
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    .content h1
+{
+    color:navy;
+    font-size: 60px;
+}
+}
